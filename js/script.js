@@ -1,36 +1,49 @@
 'use strict';
 
+// const hamburger = 5;
+// const fries = 0;
 
-if (4) {
-    console.log('OK!')
-} else {
-    console.log('Error')
-}
-
-const num = '50';
-
-// if (num < 49) {
-//     console.log('Error');
-// } else if (num > 100) {
-//     console.log('Слишком много');
-// } else {
-//     console.log('OK!');
+// if (hamburger && fries) {
+//     console.log('Я сыт');
 // }
 
-// (num === 50) ? console.log('OK!') : console.log('Error');
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
 
-switch (num) {
-    case '49':
-        console.log('Неверно');
-        break;
-    case '100':
-        console.log('Неверно');
-        break;
-    case '50': 
-        console.log('В точку');
-        break;
-    default: 
-    console.log(' Не в этот раз');
-        break;
 
+// console.log((hamburger === 3 && cola && fries ));
+
+// console.log(1 && 0);
+// console.log(1 && 5);
+// console.log(null && 5);
+// console.log(0 && 'go');
+
+
+
+// if (hamburger === 3 && cola === 1 && fries ) {
+//     console.log('Все сыты');
+// } else {
+//     console.log('Мы уходим!');
+// }
+
+
+const hamburger = 3;
+const fries = 3;
+const cola = 0;
+const nuggets = 2;
+
+
+if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+    console.log('Все довольны');
+} else {
+    console.log('Мы уходим!');
 }
+
+
+console.log((hamburger || cola || fries));
+
+
+let johnReport, alexReport, samReport, mariaReport = 'done';
+
+console.log(johnReport || alexReport || samReport || mariaReport)
